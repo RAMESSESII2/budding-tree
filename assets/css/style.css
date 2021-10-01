@@ -1,0 +1,232 @@
+@import "var.css";
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu', sans-serif;
+    color: var(--secondary-color);
+    font-size: var(--primary-font-size);
+}
+
+h1 {
+    font-weight: var(--primary-font-weight);
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.green-logo {
+    color: var(--primary-color);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+.font-light {
+    font-weight: lighter;
+}
+
+/* .logo-text {
+    margin: 0 auto;
+} */
+.body-container {
+    padding: 20px 50px; /*top-right-bot-left*/
+}
+.w-50{
+    width: 50%;
+}
+
+.m1-1 {
+    margin-left: 5px;
+}
+
+a.link {
+    margin-right: 50px;
+    /* color: red; */
+}
+.d-flex {
+    display: flex;
+}
+
+#main-img {
+    width: 600px;
+    height: 500px;
+}
+
+.bd-1 {
+    border-style: hidden hidden inset dashed;
+    border-width: 10px;
+    border-color: rgb(114, 74, 74);
+    border-left-color: rgb(5, 90, 90);
+    border-left-width: 5px;
+    border-bottom-width: 10px;
+    border-radius: 25% 10%;
+}
+
+.w-100{
+    width: 100%;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type=email] {
+    font-size: 15px;
+    padding: 15px 10px;
+    background: #F5F5F5;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-container {
+
+}
+.pl-1 {
+    padding-left: 10px;
+}
+.pr-1 {
+    padding-right: 10px;
+}
+
+.pl-2 {
+    padding-left: 20px;
+}
+.pr-2 {
+    padding-right: 20px;
+}
+.mx-2 {
+    margin-left: 20px;;
+    margin-right: 20px;;
+}
+.ml-2 {
+    margin-left: 20px;
+}
+.mr-2 {
+    margin-right: 10px;
+}
+.ml-1 {
+    padding-left: 5px;
+}
+.mr-1 {
+    padding-right: 5px;
+}
+.my-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.my-3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button.bg-theme-secondary {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    border: 0;
+    font-size: 15px;
+}
+
+/* breakpoiint that will work till 640px */
+@media (min-width: 640px) {
+    .d-mobile {
+        display: none !important;
+    }
+
+    .d-desktop {
+        display: block !important;
+    }
+}
+@media (max-width: 640px) {
+    .d-mobile {
+        display: block !important; /* block means display */
+    }
+
+    .d-desktop {
+        display: none !important;
+    }
+    .right-container.w-50,
+    .form-container.w-50 {
+        width: 100%;
+    }
+    .form-container .d-flex{
+        display: block;
+    }
+    .form-container .w-50 .mobile-margin {
+        display: block;
+    }
+    .form-container .w-50.pl-1, 
+    .form-container .w-50.pr-1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .body-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.w-30 {
+    width: 30%;;
+}
+.w-40 {
+    width: 40%;;
+}
+.body-secondary {
+    border: 1px solid var(--secondary-color);
+}
+.text-center {
+    text-align: center;
+}
+.font-light {
+    font-weight: lighter;
+}
+.btn.btn-white {
+    background-color: white;
+    padding: 10px;
+}
+.mx-2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* .centerit{
+    text-align: center;
+    margin: 0px 10px 0px 10px ;
+    font-size: x-large;
+    font-weight: bolder;
+} */
+.d-inline-flex {
+    display: inline-flex;
+}
+.position-absolute {
+    position: absolute;
+}
+.position-relative {
+    position: relative;
+}
+/* .box{
+    display: flex;
+    justify-content: space-between;
+}
+.caption{
+    padding: 20px;
+    border: 0.1px solid orange;
+    color: rgb(209, 77, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  */
